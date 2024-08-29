@@ -1,4 +1,4 @@
-##Algorithm Visualizer Aircode 🎉
+<h1>Algorithm Visualizer Aircode 🎉</h1>
 
 Welcome to Algorithm Visualizer Aircode! 🚀 This is your all-in-one platform for learning algorithms, solving doubts, and mastering coding with style. 🎓✨ Dive into interactive visualizations, get your questions answered by an AI-powered chatbot, and learn through bite-sized videos and in-depth tutorials.
 
@@ -29,10 +29,10 @@ Long-Format Videos: Dive deep with detailed tutorials on app/web development and
 Challenge yourself with quizzes after each module. 📋
 Earn points, track your progress, and climb the leaderboards! 📊
 
-##🤝 Contributing
+🤝 Contributing
 We ❤️ contributions! Fork the repo, make your changes, and send a pull request! Let’s build something awesome together! 🚀
 
-##📜 License
+📜 License
 Licensed under the MIT License - see the LICENSE.md file for more details.
 
 📬 Contact
