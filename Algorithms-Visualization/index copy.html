@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+        <meta charset="utf-8">
+        <meta content="width=device-width, initial-scale=1.0" name="viewport">
+      
+        <title>Home</title>
+        <meta content="" name="description">
+        <meta content="" name="keywords">
+      
+        
+        <link rel="icon" href="C:\Users\heerm\Algorithms-Visualization\img\logo.jpg"/>
+      
+        
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Nunito:300,300i,400,400i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+      
+        
+        <link href="assets2/vendor/aos/aos.css" rel="stylesheet">
+        <link href="assets2/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+        <link href="assets2/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+        <link href="assets2/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+        <link href="assets2/vendor/remixicon/remixicon.css" rel="stylesheet">
+        <link href="assets2/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+      
+        
+        <link href="assets2/css/style.css" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/a658a7b479.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="icon" href="C:\Users\heerm\Algorithms-Visualization\img\logo.jpg"/>
+    <style>
+        
+        body {
+            background-size: 100% 100%;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+        }
+        .card-deck {
+    display: flex;
+    flex-wrap: wrap;
+   
+}
+/* Hide scrollbar for Chrome, Safari and Opera */
+body::-webkit-scrollbar {
+    display: none;
+}
+/* Hide scrollbar for Chrome, Safari and Opera */
+body::-webkit-scrollbar {
+    display: none;
+}
+
+
+header {
+  background-color:white;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 1000; /* This ensures the header stays on top of other content */
+}
+/* Hide scrollbar for IE, Edge and Firefox */
+body {
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+    overflow: -moz-scrollbars-none; /* Firefox */
+    overflow: -ms-autohiding-scrollbar; /* Edge */
+}
+
+
+/* Hide scrollbar for IE, Edge and Firefox */
+body {
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+}
+
+.card:nth-child(3n+1) {
+    margin-left: 40px;
+    margin-right: 40px; /* Adjust margin between groups of cards as needed */
+}
+
+.floating-button {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            color: white;
+            border: none;
+            border-radius: 50%;
+            width: 60px;
+            height: 60px;
+            font-size: 24px;
+            text-align: center;
+            line-height: 60px;
+            cursor: pointer;
+            z-index: 9999;
+        }
+
+        .floating-button:hover {
+            background-color: #0056b3;
+        }
+
+        /* Custom styling for the circular image */
+        .floating-button img {
+            width: 100%;
+            border-radius: 50%;
+        }
+        a,
+a:link,
+a:visited,
+a:hover,
+a:active{
+    text-decoration: none;
+    color: white;
+}
+
+    </style>
+</head>
+
+<body>
+    <header id="header" class="header fixed-top">
+        <div class="container-fluid container-xl d-flex align-items-center justify-content-between">
+    
+          <a href="#" class="logo d-flex align-items-center">
+            <img src="assets2/img/favicon.ico" alt="">
+            <span>AirCode</span>
+          </a>
+    
+          <nav id="navbar" class="navbar">
+            <ul>
+                <li><a class="getstarted scrollto" href="longvid/portfolio-courses.html">Courses</a></li>
+              </ul>
+            <ul>
+              <li><a class="getstarted scrollto" href="home.html">Logout</a></li>
+            </ul>
+            
+            <i class="bi bi-list mobile-nav-toggle"></i>
+            
+          </nav>
+    
+        </div>
+      </header>
+   
+
+
+      <section class="section">
+       
+      </section>
+    
+       
+    
+      </section>   
+    <div class="card-deck">
+        
+                  </div>
+                </div>
+            </div>
+        </div>
+                
+        
+          </section>
+            
+         
+
+    
+   
+
+    
+        
+        <div class="container" data-aos="fade-up">
+        <!-- Cards on top -->
+        <script>
+            
+           let cards = [{
+    title: "Datastructure",
+    link: "file:///C:/Users/heerm/Algorithms-Visualization/templates/DataStructures%20LOGGED.html",
+    image: "./img/dsimg.gif",
+    alt: "Botimage"
+}, {
+    title: "Pathfinding",
+    link: "file:///C:/Users/heerm/Algorithms-Visualization/templates/pathfinding%20LOGGED.html",
+    image: "./img/pathfinding.gif",
+    alt: "Pathfinding image"
+}, {
+    title: "Searching",
+    link: "file:///C:/Users/heerm/Algorithms-Visualization/templates/searching%20LOGGED.html",
+    image: "./img/avl.gif",
+    alt: "Searching image"
+},
+{
+    title: "Study Shorts",
+    link: "C:/Users/heerm/Algorithms-Visualization/videosmain.html",
+    image: "./img/scroll.gif",
+    alt: "scroller"
+}];
+
+            for (let i = 0; i < 3; i++) {
+                const card = cards[i];
+                const cardTemplate = `
+                    <div class="card">
+                        <a href=${card.link}><img class="card-image" src=${card.image} alt=${card.alt}></a>
+                        <div class="container">
+                            <div class="card-title">
+                                <h2>${card.title}</h2>
+                            </div>
+                            <div class="card-buttons">
+                                <button class="btn-danger"><a href=${card.link}>Visualise</a></button>
+                            </div>
+                        </div>
+                        <br>
+                    </div>
+                `;
+                document.querySelector(".card-deck").innerHTML += cardTemplate;
+            };
+            for (let i = 3; i < 4; i++) {
+                const card = cards[i];
+                const cardTemplate = `
+                    <div class="card">
+                        <a href=${card.link}><img class="card-image" src=${card.image} alt=${card.alt}></a>
+                        <div class="container">
+                            <div class="card-title">
+                                <h2>${card.title}</h2>
+                            </div>
+                            <div class="card-buttons">
+                                <button class="btn-danger"><a href=${card.link}>Scroll and answer</a></button>
+                            </div>
+                        </div>
+                        <br>
+                    </div>
+                `;
+                document.querySelector(".card-deck").innerHTML += cardTemplate;
+            };
+        </script>
+ </section>
+        <!-- Chatbot and Quiz cards below -->
+        <script>
+            const chatbotCard = {
+                title: "Chatbot",
+                link: "C://Users//heerm//Algorithms-Visualization//chatbot-frontend//bot.html",
+                image: "C://Users//heerm//Algorithms-Visualization//img//chatbotimg.gif",
+                alt: "Chatbot"
+            };
+            const quizCard = {
+                title: "Quiz",
+                link: "C://Users//heerm//Algorithms-Visualization//DSA-Quiz-App//home.html",
+                image: "C://Users//heerm//Algorithms-Visualization//img//quiz.gif",
+                alt: "Quiz"
+            };
+           
+
+            // Chatbot card
+            const chatbotCardTemplate = `
+                <div class="card">
+                    <a href=${chatbotCard.link} ><img class="card-image" src=${chatbotCard.image} alt=${chatbotCard.alt}></a>
+                    <div class="container">
+                        <div class="card-title">
+                            <h2>${chatbotCard.title}</h2>
+                        </div>
+                        <div class="card-buttons">
+                            <button class="btn-danger"><a href=${chatbotCard.link}>Ask Me</a></button>
+                        </div>
+                    </div>
+                    <br>
+                </div>
+            `;
+            document.querySelector(".card-deck").innerHTML += chatbotCardTemplate;
+
+            // Quiz card
+            const quizCardTemplate = `
+                <div class="card">
+                    <a href=${quizCard.link}><img class="card-image" src=${quizCard.image} alt=${quizCard.alt}></a>
+                    <div class="container">
+                        <div class="card-title">
+                            <h2>${quizCard.title}</h2>
+                        </div>
+                        <div class="card-buttons">
+                            <button class="btn-danger"><a href=${quizCard.link}>Test Yourself</a></button>
+                        </div>
+                    </div>
+                    <br>
+                </div>
+            `;
+            document.querySelector(".card-deck").innerHTML += quizCardTemplate;
+        </script>
+ <button class="floating-button" onclick="openChatbot()">
+    <img src="C:\Users\heerm\Algorithms-Visualization\chatbot-frontend\static\img\bot.jpg" >
+    
+</button>
+
+
+<!-- Vendor script files -->
+<script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js">
+</script>
+
+<!-- Custom scripts -->
+<script>
+    /**
+     * Function to open the chatbot page.
+     */
+     function openChatbot() {
+            // Retrieve the link of the chatbot card
+            const chatbotLink = document.querySelector('.card-deck .card:last-of-type a').getAttribute('href');
+            // Open the chatbot link in a new window
+            window.open(chatbotLink, '_blank');
+        }
+    function openChatbot() {
+        window.open('file:///C://Users//heerm//Algorithms-Visualization//chatbot-frontend//bot.html');
+    }
+</script>
+    </div>
+    <br>
+    <br>
+</body>
+
+</html>

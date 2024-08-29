@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    
+  
+  <link rel="icon" href="C:\Users\heerm\Algorithms-Visualization\img\logo.jpg"/>
+  <link href="assets2/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Nunito:300,300i,400,400i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+
+   
+  <link rel="preconnect" href="https://fonts.googleapis.com/">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&amp;display=swap">
+  
+  <link rel="stylesheet" type="text/css" href="assets/vendor/font-awesome/css/all.min.css">
+  <link rel="stylesheet" type="text/css" href="assets/vendor/bootstrap-icons/bootstrap-icons.css">
+  <link rel="stylesheet" type="text/css" href="assets/vendor/OverlayScrollbars-master/css/OverlayScrollbars.min.css">
+  <link rel="stylesheet" type="text/css" href="assets/vendor/tiny-slider/dist/tiny-slider.css">
+  <link rel="stylesheet" type="text/css" href="assets/vendor/plyr/plyr.css" />
+  
+  <link id="style-switch" rel="stylesheet" type="text/css" href="assets/css/style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+  <link href="assets2/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets2/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets2/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets2/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets2/vendor/remixicon/remixicon.css" rel="stylesheet">
+  <link href="assets2/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+  
+  <link href="assets2/css/style.css" rel="stylesheet">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=0.498" />
+    <script src="https://kit.fontawesome.com/a658a7b479.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="../css/pathfinding.css" />
+    <link rel="icon" href="C:\Users\heerm\Algorithms-Visualization\img\logo.jpg"/>    
+    <title>Pathfinding Visualizer</title>
+    <style>
+.logo {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+}
+
+.logo-icon {
+    width: 32px; /* Adjust the width of the icon as needed */
+    margin-right: 0; /* Remove margin between the icon and the website name */
+}
+
+.website-name {
+    font-size: 1.5rem; /* Adjust the font size of the website name as needed */
+}
+
+
+
+
+    </style>
+</head>
+
+    <div class="overlay">
+        <nav class="content">
+            <header id="header" class="header fixed-top">
+                <div class="container-fluid container-xl d-flex align-items-center justify-content-between">
+                        
+                    </a>
+            </div>
+            <div class="logo">
+                <img src="C:/Users/heerm/Algorithms-Visualization/assets2/img/favicon.ico" alt="Logo" class="logo-icon">
+                <a href="C:\Users\heerm\Algorithms-Visualization\index copy.html">Air<span>Code</span></a>
+            </div>
+
+            <ul>
+                <li>
+                    <a href="#">
+                        <select name="algo" id="algo">
+                            <option value="" disabled selected>
+                                Choose Algorithm
+                            </option>
+                            <option value="bfs">
+                                BREADTH FIRST SEARCH
+                            </option>
+                            <option value="dfs">
+                                DEPTH FIRST SEARCH
+                            </option>
+
+                            <option value="dijkstra">
+                                DIJKSTRA ALGORITHM
+                            </option>
+                            <option value="best">
+                                BEST FIRST SEARCH
+                            </option>
+                           
+                        </select>
+                    </a>
+                </li>
+                <li>
+                    <a href="#"><button id="visualize" style="color:green">
+                            VISUALIZE
+                        </button></a>
+                </li>
+
+                <li>
+                    <a href="#"><button id="rectangular-maze">
+                            BUILT MAZE
+                        </button></a>
+                </li>
+
+                <li>
+                    <a href="#"><button id="random-maze">
+                            RANDOM WALL MAZE
+                        </button></a>
+                </li>
+
+                <li>
+                    <a href="#"><button id="clear">CLEAR PATH</button></a>
+                </li>
+
+                <li>
+                    <a href="#"><button id="reset" style="color: red">
+                            RESET
+                        </button></a>
+                </li>
+            </ul>
+        </nav>
+
+        <div class="container heading">
+            <h1>
+                <i class="fas fa-wave-square"></i> Explore Awesome Pathfinding Algorithms !!
+            </h1>
+        </div>
+
+        <div class="notations container content">
+            <div class="notation" style="display: inline">
+                <canvas id="notation-box1" width="30" height="30" style="display: inline"></canvas>
+                <h2 class="notation-text">Start</h2>
+            </div>
+            <div class="notation" style="display: inline">
+                <canvas id="notation-box2" width="30" height="30" style="display: inline"></canvas>
+                <h2 class="notation-text">End</h2>
+            </div>
+            <div class="notation" style="display: inline">
+                <canvas id="notation-box3" width="30" height="30" style="display: inline"></canvas>
+                <h2 class="notation-text">Wall</h2>
+            </div>
+            <div class="notation" style="display: inline">
+                <canvas id="notation-box4" width="30" height="30" style="display: inline"></canvas>
+                <h2 class="notation-text">Visited</h2>
+            </div>
+            <div class="notation" style="display: inline">
+                <canvas id="notation-box5" width="30" height="30" style="display: inline"></canvas>
+                <h2 class="notation-text">Path</h2>
+            </div>
+
+            <div class="notation" style="display: inline">
+                <canvas id="notation-box6" width="30" height="30" style="display: inline"></canvas>
+                <h2 class="notation-text">Weight</h2>
+            </div>
+            <div class="notation" style="display: inline">
+                <button class="btn-dark btn-hover tutorial-btn" id="tutorial" title="Page Walk through">
+                    Tutorial
+                </button>
+            </div>
+        </div>
+
+        <div class="notations container content">
+            <div class="notation">
+                <button class="btn-start tutorial-btn" id="start" title="Page Walk through">
+                    Place Source
+                </button>
+                <button class="btn-danger tutorial-btn" id="end" title="Page Walk through">
+                    Place Destination
+                </button>
+                <h2 class="notation-text content">Add Weights</h2>
+                <input type="checkbox" id="weight" name="weight" style="zoom: 1.9" />
+            </div>
+        </div>
+
+        <div class="container content">
+            <canvas id="main-canvas"></canvas>
+        </div>
+
+        <br />
+        <h2 class="container" id="visited"></h2>
+        <h2 class="container" id="result"></h2>
+        <br /><br /><br />
+    </div>
+
+    <div class="tutorial-container">
+        <div class="tutorial-content">
+            <div class="tutorial-header">
+                <h1>
+                    Welcome to Pathfinding Visualizer ! <sup>1/7</sup>
+                </h1>
+            </div>
+            <h2>
+                This short tutorial will walk you through all of the features of this application.
+            </h2>
+            <h3>
+                If you want to dive right in, feel free to press the "Skip Tutorial" button below. Otherwise, press "Next"!
+            </h3>
+            <img src="../img/pathfinding_tutorial/logo.png" alt="demo image" id="tutorial-img" />
+        </div>
+        <br />
+        <div class="tutorial-btns">
+            <button class="tutorial-btn btn-dark" id="prev">
+                Previous
+            </button>
+            <button class="tutorial-btn btn-danger" id="skip">
+                Skip Tutorial
+            </button>
+            <button class="tutorial-btn btn-dark" id="next">
+                Next
+            </button>
+        </div>
+        <div>
+            <button class="tutorial-btn btn-dark finish" style="display: none" id="skip">
+                Close Tutorials
+            </button>
+        </div>
+    </div>
+
+    <script src="../js/pathfinding/sketch.js"></script>
+    <script src="../js/pathfinding/Main/board.js"></script>
+    <script src="../js/pathfinding/algorithms/bfs.js"></script>
+    <script src="../js/pathfinding/algorithms/dfs.js"></script>
+    <script src="../js/pathfinding/algorithms/dijkstra.js"></script>
+    <script src="../js/pathfinding/utils.js"></script>
+    <script src="../js/pathfinding/algorithms/best.js"></script>
+    <script src="../js/pathfinding/algorithms/astar.js"></script>
+    <script src="../js/pathfinding/maze/randomMaze.js"></script>
+    <script src="../js/pathfinding/maze/recursiveDivision.js"></script>
+    <script src="../js/pathfinding/tutorialsModal.js"></script>
+    <script src="../js/pathfinding/init.js"></script>
+</body>
+
+</html>
