@@ -39,3 +39,16 @@ Licensed under the MIT License - see the LICENSE.md file for more details.
 Got questions? Reach out to the maintainers or join our community! We’re here to help! 🙌
 
 Feel free to make any tweaks or let me know if there's more you'd like to add! 🚀😊
+
+DEMO IMAGES
+
+![Screenshot (474)](https://github.com/user-attachments/assets/f6d9cb2f-fd4c-410b-9193-daa480c3ee44)
+![Screenshot (484)](https://github.com/user-attachments/assets/dfb9c28d-4622-4da6-8d8b-17d358a34eed)
+![Screenshot (483)](https://github.com/user-attachments/assets/4efa97e4-21bb-4d93-94d8-dc9ee4bf6a4f)
+![Screenshot (482)](https://github.com/user-attachments/assets/f8d065bc-6cba-4ce5-81d4-476d843c8fb4)
+![Screenshot (481)](https://github.com/user-attachments/assets/3002786d-020f-4fef-8c18-f0e41e20384f)
+![Screenshot (480)](https://github.com/user-attachments/assets/5a9ffa13-19eb-4c71-9eb3-320d2b96b913)
+
+![Screenshot (479)](https://github.com/user-attachments/assets/f0469781-b526-4e13-a97a-81db1070eef8)
+![Screenshot (477)](https://github.com/user-attachments/assets/404f1dca-e180-4e5b-b563-3dd551a1ca65)
+![Screenshot (475)](https://github.com/user-attachments/assets/517c9c77-95f5-4e55-8124-136adbdc75ab)
